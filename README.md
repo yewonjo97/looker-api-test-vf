@@ -4,7 +4,7 @@
 
 ### 01_create_and_test_connection
 
-<Input Arguments>
+[Input Arguments]
 
 1) Connection name : 신규 생성할 Connection 이름
 
@@ -12,7 +12,7 @@
 
 ### 02_create_and_update_project
 
-<Input Arguments>
+[Input Arguments]
 
 1) Project name : 신규 생성할 프로젝트 이름
   
