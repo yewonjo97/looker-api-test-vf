@@ -55,10 +55,7 @@ view: superstore {
     type: string
     sql: ${TABLE}.row_id ;;
   }
-  dimension: sales {
-    type: string
-    sql: ${TABLE}.sales ;;
-  }
+
   dimension: segment {
     type: string
     sql: ${TABLE}.segment ;;
@@ -80,7 +77,6 @@ view: superstore {
     sql: ${TABLE}.subcategory ;;
   }
 
-
   dimension_group: order_date {
     type: time
     timeframes: [
@@ -93,12 +89,20 @@ view: superstore {
     ]
     convert_tz: no
     datatype: date
-    sql: replace(order_date,'.','-') ;;
+    sql: cast(replace(order_date,'.','-') as date) ;;
+  }
+
+
+  measure: sales {
+    type: number
+    sql: sum(${TABLE}.sales) ;;
+    value_format: "$#.00;-$#.00"
   }
 
   measure: profit {
     type: number
     sql: sum(${TABLE}.profit) ;;
+    value_format: "$#.00;-$#.00"
   }
 
 
