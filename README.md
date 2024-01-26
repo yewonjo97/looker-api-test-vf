@@ -22,6 +22,8 @@
 
 ### 03_create_lookml_model
 
+[Input Arguments]
+
 1) Connection name : 모델에 사용할 Connection name
   
 2) Git Repository name : 모델이 생성될 프로젝트에 연결된 깃 리포지토리 이름 
@@ -33,6 +35,8 @@
 ---
 
 ### 04_create_query_and_look
+
+[Input Arguments]
 
 1) Look name : 신규 생성할 Look 이름
   
