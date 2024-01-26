@@ -2,7 +2,7 @@
 
 ## Python Sample Code 수행 Input Arguments
 
-01_create_and_test_connection
+01_create_and_test_connection \n
   (1) Connection name : 신규 생성할 Connection 이름
 
 02_create_and_update_project
