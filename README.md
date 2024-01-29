@@ -46,3 +46,18 @@
 
 ---
 
+## Models / Views 폴더 설명
+
+### Models/
+
+model_template 파일의 "Your Connection" 부분을 신규 생성한 Connection 이름으로 대치하여 사용 
+
+-> api_call_model_vf.model.lkml
+
+
+### Views/
+
+view_template 파일의 "Your_Schema", "Your_Table" 부분을 사용중인 스키마, 테이블 이름으로 대치하여 사용
+
+-> superstore.view.lkml 
+
